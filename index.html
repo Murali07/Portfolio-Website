@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/731af14252.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo9.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>MERN Stack Developer</p>
+          <h1>Hi, I'm <span>Murali</span> <br />Selvaraj</h1>
+        </div>
+        <div class="header-social-icons">
+          <a href="https://www.linkedin.com/in/murali-selvaraj/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Murali07"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--------- About section --------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user2.jpg" alt="profile" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              With over 5 years of experience as an SAP Security Consultant
+              specializing in SAP ERP Central Component (ECC) 6.0, I have a
+              strong background in Production Support for R/3 Security and GRC.
+              Additionally, I have more than 2 years of hands-on experience in
+              MERN Full Stack Development. My goal is to leverage my skills to
+              create high-quality websites and continuously expand my knowledge
+              in emerging technologies and industry best practices. I am
+              actively seeking a web development position that will enable me to
+              further advance my career while making meaningful contributions to
+              the growth of the company.
+            </p>
+
+            <div class="tab-details">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />Java, JavaScript,
+                  Python, HTML, CSS
+                </li>
+                <li>
+                  <span>Frameworks</span><br />React, Node, Express, Spring,
+                  Spring Boot
+                </li>
+                <li><span>Database</span><br />MongoDB, SQL, MySQL</li>
+                <li><span>Version Control</span><br />Git, Docker</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Present</span><br />SAP Security Consultant at
+                  Tata Consultancy Services
+                </li>
+                <li>
+                  <span>2018 - 2021</span><br />System Engineer at Tata
+                  Consultancy Services
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>November 2022 - Present</span><br />Post Graduate
+                  Program in Full Stack Web Development
+                </li>
+                <li>
+                  <span>January 2022 - June 2022</span><br />Zen Class Full
+                  Stack Developer Program from GUVI Geek Networks, IITM Research
+                  Park.
+                </li>
+                <li>
+                  <span>2014 - 2018</span><br />Bachelor of Engineering in
+                  Computer Science from Bannari Amman Institute of Technology,
+                  Sathyamangalam, Erode.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------- Services section -------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi esse inventore quis, reprehenderit magnam non dolore
+              architecto quia necessitatibus tempora vitae repudiandae
+              perferendis voluptate, perspiciatis iste quibusdam dolorem cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi esse inventore quis, reprehenderit magnam non dolore
+              architecto quia necessitatibus tempora vitae repudiandae
+              perferendis voluptate, perspiciatis iste quibusdam dolorem cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              eligendi esse inventore quis, reprehenderit magnam non dolore
+              architecto quia necessitatibus tempora vitae repudiandae
+              perferendis voluptate, perspiciatis iste quibusdam dolorem cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <ul>
+      <li>I develop the user interface.</li>
+      <li>I design and layout websites.</li>
+      <li>Web page development.</li>
+      <li>I create ux element interactions.</li>                
+    </ul> -->
+
+    <!------------ Projects ------------>
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/helpdesk.jpg" alt="helpdesk" />
+
+            <div class="layer">
+              <h3>Zendesk App</h3>
+              <p>
+                Zen Desk is a web application for residential/apartments query
+                raising app. Click on the link icon to check this project.
+              </p>
+              <a href="https://zendesk-application.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/foodapp4.jpg" alt="helpdesk" />
+
+            <div class="layer">
+              <h3>Food Delivery App</h3>
+              <p>
+                A minimum viable product (MVP) for a food delivery web
+                application. You can order food online. Click on the link icon
+                to check this project.
+              </p>
+              <a href="https://sssm-food-app.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/movie-reviews-l.jpg" alt="helpdesk" />
+
+            <div class="layer">
+              <h3>Movie Review App</h3>
+              <p>
+                This is a movie review application that provides rating and
+                description about the movies. Click on the link icon to check
+                this project.
+              </p>
+              <a
+                href="https://lovely-tartufo-59ae96.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!---------------- Contact section -------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              muraliselvaraj.18@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 8526682169</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/murali-selvaraj/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Murali07"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-------------- scroll up button ------------->
+      <a href="#" class="scroll-up-btn"
+        ><i class="fa-sharp fa-solid fa-arrow-up"></i
+      ></a>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Murali Selvaraj.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx82cDwPFFtvTDYIGOdorTX-oN45Y4ZjTNpqlKXJ9tyTvT4txM8-ixnOyhYmi44jrrD/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
