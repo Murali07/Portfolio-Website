@@ -79,7 +79,7 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
-/* final css */
+/* final change */
 
 .header-social-icons {
   margin-top: 30px;
@@ -479,7 +479,7 @@ nav .fa-solid {
     font-size: 14px;
   }
 
-  /* final css */
+  /* final change */
   .header-social-icons a {
     font-size: 30px;
   }
